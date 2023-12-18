@@ -6,8 +6,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# Get data
-df = pd.read_csv('data/data.csv')
 
 # Settings for LLM
 tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large", padding_side='left')
