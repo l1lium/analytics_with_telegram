@@ -64,7 +64,10 @@ def create_db():
     df1.to_sql('info', engine, if_exists='replace', index=False)
     print(65, cursor.execute("use new_db"))
 
-    # df_sql = pd.read_sql('SELECT * from patients', con=engine)
-    # print(68, df_sql)
+if __name__ == "__main__":
+   create_db()
+    
+   # df_sql = pd.read_sql('SELECT * from patients', con=engine)
+   # print(68, df_sql)
 
 
