@@ -31,7 +31,7 @@ def read_db():
     connection.close()
 
     # Display the DataFrame
-    print(df)
+    # print(df)
 
     return df
 
@@ -61,10 +61,10 @@ def create_db():
     engine = create_engine("mysql+pymysql://{user}:{pw}@{host}:{port}/{db}".format(user=username, pw=password, host=hostname, port=port, db=database))
 
     # creating table
-    df1.to_sql('patients', engine, if_exists='replace', index=False)
-    print(64, cursor.execute("use new_db"))
+    df1.to_sql('info', engine, if_exists='replace', index=False)
+    print(65, cursor.execute("use new_db"))
 
     # df_sql = pd.read_sql('SELECT * from patients', con=engine)
-    # print(67, df_sql)
+    # print(68, df_sql)
 
 
