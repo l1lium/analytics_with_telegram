@@ -1,2 +1,2 @@
 # analytics_with_telegram
-Telegram bot for executing some things of analytics
+Telegram bot for doing data analytics
